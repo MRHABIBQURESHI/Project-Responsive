@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+figure {
+    background: white;
+    overflow: hidden;
+}
+
+figure img:hover {
+    opacity: 0.3;
+    /* height: 120%; */
+}
+
+
+/* body{
+    height: fit-content;
+    height: 10000px;
+} */
+
+header {
+    background: rgb(241, 129, 49);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 8px;
+    background-color: rgb(255, 255, 173);
+    animation-name: navani;
+    animation-duration: 1s;
+    position: relative;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    height: 25px;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-row a {
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    flex-basis: 48%;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.nav-row a:hover {
+    /* background-color: rgb(106, 74, 74); */
+    box-shadow: 3px 3px 10px rgb(55, 55, 55);
+}
+
+.header-img {
+    text-align: center;
+}
+
+.head-img-mobile {
+    display: inline;
+    width: 100%;
+}
+
+.head-img-pc,
+.head-img-tab {
+    display: none;
+}
+
+@keyframes navani {
+    form {
+        top: -10vw;
+    }
+}
+
+@media screen and (min-width:768px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+    .nav-row {
+        display: inline;
+    }
+    .nav-row a {
+        color: black;
+        background-color: transparent;
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .nav-row a:hover {
+        box-shadow: none;
+        color: rgb(151, 151, 151);
+    }
+    .head-img-tab {
+        width: 100%;
+        display: inline;
+    }
+    .head-img-mobile,
+    .head-img-pc {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .logo {
+        margin: 0;
+        display: flex;
+    }
+    .or1 {
+        order: 1;
+    }
+    .or2 {
+        order: 2;
+    }
+    .or3 {
+        order: 3;
+    }
+    .head-img-pc {
+        width: 80%;
+        display: inline;
+    }
+    .head-img-mobile,
+    .head-img-tab {
+        display: none;
+    }
+}
+
+
+/* http: //wall-of-wonder.surge.sh/css/sec1.css */
+
+.sec1 {
+    background-color: rgb(211, 244, 255);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.sec1-center {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sec1 h1 {
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.mission {
+    text-align: left;
+}
+
+.sec1 img {
+    width: 50%;
+    display: inline;
+    margin-top: 25px;
+}
+
+.sec1 p {
+    font-family: tahoma;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width:768px) {
+    .sec1 img {
+        float: left;
+        shape-outside: polygon(10px 10px, 269px 2px, 155px 193px);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .sec1 img {
+        width: 30%;
+        shape-outside: polygon(10px 10px, 212px -3px, 95px 186px);
+    }
+}
+
+
+/* http: //wall-of-wonder.surge.sh/css/sec2.css */
+
+.sec2 {
+    padding: 50px;
+    background-color: rgb(0, 85, 118);
+}
+
+.sec2 h1 {
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.sec2-row1,
+.sec2-row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec2 figure {
+    width: 50vw;
+    height: 50.2vw;
+    border: 8px solid orangered;
+    margin: 10px;
+}
+
+.sec2 figure:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+.sec2 img {
+    width: 100%;
+}
+
+.sec2 figcaption {
+    padding-top: 1.6vw;
+    /* padding-bottom: 1vw; */
+    padding-left: 10px;
+    background-color: #ffffffc0;
+    position: relative;
+    top: -5.4vw;
+    height: 5vw;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 11px;
+}
+
+@media screen and (min-width:768px) {
+    .sec2-row1 {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .sec2-row1 figure {
+        flex-basis: 28vw;
+        height: 28vw;
+    }
+    .sec2-row2 figure {
+        height: 28vw;
+        width: 67vw;
+        overflow: hidden;
+    }
+    .sec2-row2 figcaption {
+        top: -44vw;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+    .sec2 figure {
+        height: 28vw;
+        width: 28vw;
+        overflow: hidden;
+    }
+    .sec2-row2 figcaption {
+        top: -5.4vw;
+    }
+}
+
+
+/* http: //wall-of-wonder.surge.sh/css/sec3.css */
+
+.sec3 {
+    padding: 50px;
+    background-color: rgb(234, 231, 203);
+}
+
+.sec3 h1 {
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.sec3 figure {
+    border: 8px solid yellowgreen;
+    margin: auto;
+    /* width: fit-content; */
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec3 figure:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+.sec3 img {
+    height: 100%;
+    /* width: 100%; */
+}
+
+.sec3 figcaption {
+    padding-top: 1.6vw;
+    /* padding-bottom: 1vw; */
+    padding-left: 10px;
+    background-color: #ffffffc0;
+    position: relative;
+    top: -5.4vw;
+    height: 5vw;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 11px;
+}
+
+@media screen and (min-width:768px) {
+    .sec3 figure {
+        height: 28vw;
+    }
+    .sec3 img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .sec3 figure {
+        height: 28vw;
+    }
+}
+
+
+/* http: //wall-of-wonder.surge.sh/css/sec4.css */
+
+.sec4 {
+    padding: 50px;
+}
+
+.sec4 h1 {
+    font-family: tahoma;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collections figure {
+    width: 50vw;
+    height: 50.2vw;
+    margin: 10px;
+}
+
+.sec4 figure:hover {
+    box-shadow: 2px 2px 10px black;
+}
+
+.sec4 img {
+    width: 100%;
+}
+
+.sec4 figcaption {
+    padding-top: 1.6vw;
+    /* padding-bottom: 1vw; */
+    padding-left: 10px;
+    background-color: #ffffffc0;
+    position: relative;
+    top: -5.4vw;
+    height: 5vw;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 11px;
+}
+
+.blue-border {
+    border: 7px solid rgb(60, 155, 154);
+}
+
+.red-border {
+    border: 7px solid darkred;
+}
+
+.green-border {
+    border: 7px solid green;
+}
+
+.brown-border {
+    border: 7px solid chocolate;
+}
+
+.black-border {
+    border: 7px solid black;
+}
+
+@media screen and (min-width:768px) {
+    .collections {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .collections figure {
+        margin-bottom: 40px;
+        flex-basis: 44%;
+        height: 38.1vw;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .collections figure {
+        flex-basis: 30%;
+        height: 26vw;
+    }
+}
+
+
+/* http: //wall-of-wonder.surge.sh/css/footer.css */
+
+footer {
+    background-color: rgb(255, 248, 187);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer h4 {
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+footer img {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+footer img:hover {
+    opacity: 0.50;
+    background-color: black;
+    border-radius: 50%;
+}
+
+footer p {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width:768px) {
+    .footer-center {
+        flex-direction: row;
+        gap: 150px;
+    }
+}

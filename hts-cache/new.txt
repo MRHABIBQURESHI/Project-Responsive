@@ -1,0 +1,4 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+08:20:41	26/26	---M--	200	added ('OK')	text/plain	date:Wed,%2002%20Aug%202023%2016:33:46%20GMT	http://wall-of-wonder.surge.sh/robots.txt		(from )
+08:20:41	4953/4953	---MCZ	200	added ('OK')	text/html	date:Wed,%2002%20Aug%202023%2016:33:47%20GMT	http://wall-of-wonder.surge.sh/	F:/web%20down/responsive%20Assi/wall-of-wonder.surge.sh/index.html	(from )
+08:20:42	36694/36694	---M--	200	added ('OK')	image/jpeg	etag:%2289d35f3f92f6523dc7f0b33f277c9b51%22	https://ichef.bbci.co.uk/images/ic/480xn/p0dmj01q.jpg	F:/web%20down/responsive%20Assi/ichef.bbci.co.uk/images/ic/480xn/p0dmj01q.jpg	(from http://wall-of-wonder.surge.sh/)
